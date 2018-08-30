@@ -1,12 +1,16 @@
 import React from 'react';
 
 const RangeInput = props => (
-  <div>
-    <label htmlFor={props.inputId} >
+  <div className={props.className}>
+    <label
+      className={props.className + '__label'}
+      htmlFor={props.inputId}
+    >
       {props.label}
     </label>
     <input
       id={props.inputId}
+      className={props.className + '__input'}
       type="range"
       min={0}
       max={10}
@@ -14,6 +18,9 @@ const RangeInput = props => (
       onChange={props.onChange}
       value={props.value}
     />
+    <div className={props.className + '__display'}>
+      {props.value}
+    </div>
   </div>
 );
 

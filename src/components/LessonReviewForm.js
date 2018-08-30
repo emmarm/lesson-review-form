@@ -46,9 +46,7 @@ class LessonReviewForm extends React.Component {
           <RangeInput
             key={field.inputId}
             inputId={field.inputId}
-            className="review-form__field"
-            labelClass="review-form__label"
-            inputClass="review-form__input"
+            className="rating-field"
             label={field.label}
             onChange={this.onRatingChange}
             value={this.state[field.inputId + 'Score']}
