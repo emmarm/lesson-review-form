@@ -11,6 +11,8 @@ const RangeInput = props => (
       min={0}
       max={10}
       step={1}
+      onChange={props.onChange}
+      value={props.value}
     />
   </div>
 );

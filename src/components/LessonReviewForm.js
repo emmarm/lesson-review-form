@@ -19,8 +19,25 @@ const RATING_FIELDS = [{
   label: 'Active Grammar'
 }];
 
+const DEFAULT_STATE = {
+  fluencyScore: 0,
+  pronunScore: 0,
+  compScore: 0,
+  vocabScore: 0,
+  grammarScore: 0
+};
+
 class LessonReviewForm extends React.Component {
-  state = {};
+  state = { ...DEFAULT_STATE };
+
+  onRatingChange = e => {
+    const target = e.target;
+    const { value, id } = target;
+
+    this.setState(() => ({
+      [id + 'Score']: value
+    }));
+  }
 
   render() {
     return (
@@ -33,6 +50,8 @@ class LessonReviewForm extends React.Component {
             labelClass="review-form__label"
             inputClass="review-form__input"
             label={field.label}
+            onChange={this.onRatingChange}
+            value={this.state[field.inputId + 'Score']}
           />
         ))}
       </form>
