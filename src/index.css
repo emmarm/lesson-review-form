@@ -1,0 +1,51 @@
+:root {
+  --font-s: 1.6rem;
+  --font-m: 2rem;
+  --font-l: 2.4rem;
+  --spacing-s: 1.2rem;
+  --spacing-m: 2rem;
+  --spacing-l: 3rem;
+  --sizing-xs: 6rem;
+  --sizing-s: 10rem;
+  --sizing-m: 20rem;
+  --sizing-l: 25rem;
+  --font-sans: Verdana, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--spacing-l);
+}
+
+.rating-field {
+  display: flex;
+  align-items: center;
+}
+
+.rating-field__label {
+  font-family: var(--font-sans);
+  font-size: var(--font-m);
+  width: var(--sizing-m);
+}
+
+.rating-field__input {
+  width: var(--sizing-m);
+  margin: var(--spacing-s) var(--spacing-l);
+}
+
+.rating-field__display {
+  font-size: var(--font-m);
+  padding: var(--spacing-s);
+}
