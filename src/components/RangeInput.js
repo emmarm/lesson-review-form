@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const RangeInput = props => (
   <div className={props.className}>
@@ -23,5 +24,13 @@ const RangeInput = props => (
     </div>
   </div>
 );
+
+RangeInput.propTypes = {
+  className: PropTypes.string.isRequired,
+  inputId: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
+  onChange: PropTypes.func.isRequired
+};
 
 export default RangeInput;

@@ -15,3 +15,10 @@ it('renders RangeInput correctly', () => {
   const wrapper = shallow(<RangeInput {...dummyInput} />);
   expect(wrapper).toMatchSnapshot();
 });
+
+it('calls onChange function correctly', () => {
+  const onChange = jest.fn();
+  const wrapper = shallow(<RangeInput onChange={onChange} />);
+  wrapper.find('input').simulate('change');
+  expect(onChange).toHaveBeenCalled();
+});
