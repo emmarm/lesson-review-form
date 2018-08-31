@@ -35,7 +35,7 @@ class LessonReviewForm extends React.Component {
     const { value, id } = target;
 
     this.setState(() => ({
-      [id + 'Score']: value
+      [id + 'Score']: Number(value)
     }));
   }
 

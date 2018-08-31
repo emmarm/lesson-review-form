@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders LessonReviewForm correctly 1`] = `
+<form
+  className="review-form"
+>
+  <RangeInput
+    className="rating-field"
+    inputId="fluency"
+    key="fluency"
+    label="Fluency"
+    onChange={[Function]}
+    value={0}
+  />
+  <RangeInput
+    className="rating-field"
+    inputId="pronun"
+    key="pronun"
+    label="Pronunciation"
+    onChange={[Function]}
+    value={0}
+  />
+  <RangeInput
+    className="rating-field"
+    inputId="comp"
+    key="comp"
+    label="Comprehension"
+    onChange={[Function]}
+    value={0}
+  />
+  <RangeInput
+    className="rating-field"
+    inputId="vocab"
+    key="vocab"
+    label="Active Vocabulary"
+    onChange={[Function]}
+    value={0}
+  />
+  <RangeInput
+    className="rating-field"
+    inputId="grammar"
+    key="grammar"
+    label="Active Grammar"
+    onChange={[Function]}
+    value={0}
+  />
+</form>
+`;

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders RangeInput correctly 1`] = `
+<div
+  className="dummy"
+>
+  <label
+    className="dummy__label"
+    htmlFor="dummy"
+  >
+    Dummy Input
+  </label>
+  <input
+    className="dummy__input"
+    id="dummy"
+    max={10}
+    min={0}
+    onChange={[Function]}
+    step={1}
+    type="range"
+    value={5}
+  />
+  <div
+    className="dummy__display"
+  >
+    5
+  </div>
+</div>
+`;
