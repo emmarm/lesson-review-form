@@ -25,7 +25,13 @@
     "comma-dangle": 0,
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "single"],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
     "no-console": 1,
     "no-unexpected-multiline": "warn",
     "no-unused-vars": "warn",

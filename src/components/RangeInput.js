@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { propTypes } from 'redux-form';
 
-const RangeInput = ({ input, className, inputId, label }) => (
+const RangeInput = ({ input, className, inputId, label, title }) => (
   <div className={className}>
-    <label className={className + '__label'} htmlFor={inputId}>
+    <label className={className + '__label'} htmlFor={inputId} title={title}>
       {label}
     </label>
     <input
@@ -21,6 +22,7 @@ const RangeInput = ({ input, className, inputId, label }) => (
 );
 
 RangeInput.propTypes = {
+  ...propTypes,
   className: PropTypes.string.isRequired,
   inputId: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired
