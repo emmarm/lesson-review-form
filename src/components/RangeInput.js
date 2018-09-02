@@ -1,36 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const RangeInput = props => (
-  <div className={props.className}>
-    <label
-      className={props.className + '__label'}
-      htmlFor={props.inputId}
-    >
-      {props.label}
+const RangeInput = ({ input, className, inputId, label }) => (
+  <div className={className}>
+    <label className={className + '__label'} htmlFor={inputId}>
+      {label}
     </label>
     <input
-      id={props.inputId}
-      className={props.className + '__input'}
+      {...input}
+      id={inputId}
+      className={className + '__input'}
       type="range"
       min={0}
       max={10}
       step={1}
-      onChange={props.onChange}
-      value={props.value}
+      value={input.value || '0'}
     />
-    <div className={props.className + '__display'}>
-      {props.value}
-    </div>
+    <div className={className + '__display'}>{input.value || '0'}</div>
   </div>
 );
 
 RangeInput.propTypes = {
   className: PropTypes.string.isRequired,
   inputId: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  value: PropTypes.number.isRequired,
-  onChange: PropTypes.func.isRequired
+  label: PropTypes.string.isRequired
 };
 
 export default RangeInput;
