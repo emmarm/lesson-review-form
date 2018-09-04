@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders RangeInput correctly 1`] = `
+exports[`RangeInput renders RangeInput correctly 1`] = `
 <div
   className="dummy"
 >
@@ -15,15 +15,14 @@ exports[`renders RangeInput correctly 1`] = `
     id="dummy"
     max={10}
     min={0}
-    onChange={[Function]}
     step={1}
     type="range"
-    value={5}
+    value="0"
   />
   <div
     className="dummy__display"
   >
-    5
+    0
   </div>
 </div>
 `;
