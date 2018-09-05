@@ -16,7 +16,7 @@ const renderField = field => (
   />
 );
 
-const LessonReviewForm = () => (
+export const LessonReviewForm = () => (
   <form className="review-form">
     {RATING_FIELDS.map(field => renderField(field))}
   </form>

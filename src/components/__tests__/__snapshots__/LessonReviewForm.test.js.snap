@@ -1,21 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders LessonReviewForm correctly 1`] = `
-<Connect(Form(LessonReviewForm))
-  destroyOnUnmount={true}
-  enableReinitialize={false}
-  forceUnregisterOnUnmount={false}
-  form="lessonReview"
-  getFormState={[Function]}
-  keepDirtyOnReinitialize={false}
-  persistentSubmitErrors={false}
-  pure={true}
-  shouldAsyncValidate={[Function]}
-  shouldError={[Function]}
-  shouldValidate={[Function]}
-  shouldWarn={[Function]}
-  touchOnBlur={true}
-  touchOnChange={false}
-  updateUnregisteredFields={false}
-/>
+exports[`LessonReviewForm renders LessonReviewForm snapshot correctly 1`] = `
+<form
+  className="review-form"
+>
+  <Field
+    className="rating-field"
+    component={[Function]}
+    inputId="fluency"
+    key="fluency"
+    label="Fluency"
+    name="fluency"
+    title="The student can speak naturally and easily."
+  />
+  <Field
+    className="rating-field"
+    component={[Function]}
+    inputId="pronun"
+    key="pronun"
+    label="Pronunciation"
+    name="pronun"
+    title="The student can use correct pronunciation and intonation."
+  />
+  <Field
+    className="rating-field"
+    component={[Function]}
+    inputId="comp"
+    key="comp"
+    label="Comprehension"
+    name="comp"
+    title="The student can understand what the teacher says."
+  />
+  <Field
+    className="rating-field"
+    component={[Function]}
+    inputId="vocab"
+    key="vocab"
+    label="Active Vocabulary"
+    name="vocab"
+    title="The student can correctly use a wide range of vocabulary in their speech."
+  />
+  <Field
+    className="rating-field"
+    component={[Function]}
+    inputId="grammar"
+    key="grammar"
+    label="Active Grammar"
+    name="grammar"
+    title="The student can correctly use appropriate grammar points in their speech."
+  />
+</form>
 `;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RangeInput renders RangeInput correctly 1`] = `
+exports[`RangeInput renders RangeInput snapshot correctly 1`] = `
 <div
   className="dummy"
 >
